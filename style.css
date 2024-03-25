@@ -1,0 +1,583 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Bookmark jo humne website me banaya hai unki scrolling smooth ho uske liye universal selector me niche ki in properties ka use karte hai */
+    scroll-behavior:smooth;
+    scroll-padding-top: 100px;
+    
+}
+
+/* CSS Variables */
+:root
+{
+    --project-font:courier,sans-serif,monospace;
+}
+
+/* Root Element */
+html
+{
+    font-size: 62.5%;
+}
+
+/* Body Tag */
+body
+{
+   font-family: var(--project-font);
+}
+
+/* Navigation-Section */
+
+.navigation-section
+{
+    /* border: 2px solid red; */
+    height:8rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    /* border: 2px solid red; */
+}
+
+
+.left-navigation
+{
+    height: 100%;
+    width: 20rem;
+}
+
+.logo-section
+{
+   width: 100%;
+   height: 100%;
+}
+
+.header-logo
+{
+    height:100%;
+    width:100%;
+    
+}
+
+.center-navigation
+{
+    font-size: 2rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    width: 80rem;
+    
+}
+
+/* Drop Down Code */
+.container
+{
+   height: 30px;
+   width: 80px;
+   position: relative;
+   text-align: center;
+   line-height: 30px;
+   font-size: 2rem;
+   font-weight: bold;
+   cursor:pointer;
+           
+}
+
+.dropdowns
+{
+        height: auto;
+        width: 80px;
+        background-color: aliceblue;
+        position: absolute;
+        left: 0;
+        display: none;
+
+}
+
+.dropdowns a
+{
+    text-decoration: none;
+    color: black;
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.container:hover
+{
+    .dropdowns
+    {
+                display: block;
+    }
+}
+
+.dropdowns a:hover
+{
+    /* background-color: green; */
+    color: rgb(0, 0, 139);
+}
+/* DropDown Code ends */
+
+.navigation-link
+{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+.navigation-link:hover
+{
+    text-decoration: underline;
+    color: rgb(0, 0, 139);
+}
+
+.get-started-btn-section
+{
+    height: 100%;    
+}
+
+.get-started-btn
+{
+    height: 100%;
+    width: 100%;
+    background-color:rgb(21, 130, 226);
+    color:aliceblue;
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 2rem;
+    border: none;
+    outline: none;
+}
+
+.get-started-link:hover
+{
+    .get-started-btn
+    {
+        color:rgb(0, 0, 139);
+    }
+}
+
+/* Main-Section */
+.main-section
+{
+   background-color:rgba(236, 226, 226, 0.951);
+   height: auto;
+   width: 100%;
+
+}
+
+/* Hero Section */
+
+.hero-section
+{
+    /* border: 2px solid green; */
+    margin-block: 2rem;
+    height: 90rem;
+    width: 100%;
+   
+}
+
+.hero-section-img
+{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+/* Hero Section 2 */
+.hero-section2
+{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid green; */
+    margin-top: 5rem;
+    padding: 1rem;
+    align-items: center;
+    height: auto;
+
+}
+
+.title
+{
+    color: darkblue;
+    font-size: 5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-block: 3rem;
+}
+
+.card-container
+{
+    /* border: 2px solid red; */
+    width: 90%;
+    height: auto;
+    display: flex;
+    gap: 4rem;
+    padding: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.card
+{
+     height:50rem;
+     width:45rem;
+     display: flex;
+     flex-direction: column;
+     /* justify-content: center; */
+     align-items: center;
+     gap: 15px;
+     /* padding: 1rem; */
+     box-shadow: 0px 2px 4px purple;
+     transition: all 0.3s linear;
+     border-radius: 5px;
+}
+
+.card:hover
+{
+   transform: scale(1.01);
+   box-shadow: 0px 4px 8px  rgba(221, 163, 16, 0.936);
+}
+
+.card-img-container
+{
+    height: 50%;
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    /* background-color: red; */
+    /* border: 2px solid red; */
+    /* margin-top: 1rem; */
+
+}
+
+.card-image
+{
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.card-title
+{
+    font-size: 3rem;
+    font-weight: bold;    
+}
+
+.card-description
+{
+    font-size: 1.5rem;
+    text-align: justify;
+    color: gray;
+    font-weight: bold;
+    margin: 10px;
+}
+
+/* Hero Section 3 */
+
+.hero-section3
+{
+    /* border: 2px solid red; */
+    margin-block:2rem;
+    /* padding: 3rem; */
+    height: auto;
+    width: 100%;
+}
+
+.hero3-top
+{
+    height: auto;
+    width: 100%;
+    /* border: 2px solid green; */
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    background-color: darkblue;
+    /* height: 80%; */
+    padding: 3rem;
+    line-height: 4rem;
+
+
+}
+
+.hero3-top-title
+{
+    font-size: 4rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 4px 5px 12px red;
+}
+
+.hero3-top-description
+{
+    max-width: 80%;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 2px red;
+    text-align: center;
+}
+
+/* Hero3 Bottom */
+.hero3-bottom
+{
+   /* border: 2px solid orchid; */
+   margin-top: 3rem;
+   height: auto;
+   display: flex;
+   flex-direction: column;
+   gap: 4rem;
+   margin-bottom: 4rem;
+   padding: 2rem;
+   background-image: linear-gradient(black,red);
+}
+
+.hero3-bottom-title
+{
+    font-size: 4rem;
+    font-weight: bold;
+    color: wheat;
+    text-shadow: 2px 2px 2px red;
+}
+
+.list-container
+{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items:justify;
+    /* margin-inline: auto; */
+    width: 100%;
+    flex-wrap: wrap;
+    /* border: 2px solid white; */
+}
+
+.list-item
+{
+    display: flex;
+    gap: 1rem;
+    /* justify-content: center; */
+
+}
+
+.list-image
+{
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    /* border: 2px solid pink; */
+}
+
+.list-description
+{
+    font-size: 2rem;
+    color:wheat;
+    position: relative;
+    top: 25px;
+    font-weight: bold;
+}
+
+/* Address-Form Section */
+
+.Address-Form-section
+{
+    /* border: 2px solid red; */
+    margin-block: 5rem;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    align-items: center;
+}
+
+.map-location
+{
+    height: 35rem;
+    width: 80%;
+    /* border: 2px solid green; */
+}
+
+.map
+{
+    height: 100%;
+    width: 100%;
+}
+
+.Address-Section
+{
+    margin-block: 5rem;
+    /* border: 2px solid orange; */
+    width: 80%;
+    padding: 2rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.Address-Container
+{
+   /* border: 2px solid red; */
+   width: 50%;
+   padding: 2rem;
+   display: flex;
+   flex-direction: column;
+   gap: 1rem;
+}
+
+.Address-title
+{
+     font-size: 4rem;
+     font-weight: bold;
+     color: black;
+}
+
+.Address
+{
+   font-size: 2.5rem;
+   font-weight: bold;
+   color: rgba(10, 55, 143, 100);
+   
+}
+
+.Address-Section-logo
+{
+    height: 85px;
+    width: 200px;
+}
+
+.Address-Section-logo-img
+{
+    height: 100%;
+    width: 100%;
+}
+
+/* Form Container */
+
+.form-Container
+{
+    /* border: 2px solid green; */
+    /* height: 20rem; */
+    width: 50%;
+    padding: 2rem;
+}
+
+.form-title
+{
+   font-size: 3rem;
+   font-weight: bold;
+}
+
+.form-data
+{
+    font-size: 2rem;
+    font-weight:bold;
+    width: 60%;
+}
+
+.user-input-field
+{
+    border: 1px solid rgba(10, 55, 143,100);
+    outline: none;
+    padding: 4px;
+}
+
+#company-name
+{
+    width: 100%;
+}
+
+.textarea-field-label
+{
+   width: 100%;
+}
+
+#client-description
+{
+    width: 100%;
+    padding: 10px;
+}
+
+.submit-btn
+{
+    padding: 10px;
+    border-radius: 8px;
+    width:30%;
+    background-color: rgba(10, 55, 143,100);
+    color: white;
+    border: none;
+    outline: none;
+}
+
+/* Footer Section */
+
+.footer-section
+{
+    /* border: 2px solid green; */
+    padding: 3rem;
+    background-color: darkblue;
+}
+
+.footer-container
+{
+   width: 80%;
+   margin-inline: auto;
+   /* border: 2px solid orange; */
+   display: flex;
+   gap: 2rem;
+   justify-content: space-between;
+   padding: 2rem;
+   
+
+}
+
+.social-section,.product-section,.reachUs-section
+{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.social-title,.product-title,.reachUs-title
+{
+     font-size: 4rem;
+}
+
+.social-link
+{
+   all: unset;
+}
+
+li
+{
+    list-style: none;
+    font-size: 2rem;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+.social-icon
+{
+    height: 50px;
+    width: 50px;
+    /* text-align: center; */
+    /* border-radius: 50%; */
+}
+
+.social-span
+{
+    position: relative;
+    bottom: 35%;
+}
+
+.product-section a
+{
+    /* text-decoration: none; */
+    all: unset;
+}
